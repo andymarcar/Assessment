@@ -1,0 +1,33 @@
+{
+  "default": {
+    "paths": ["features/**/*.feature"],
+    "require": ["src/hooks/hooks.ts", "src/steps/**/*.ts"],
+    "requireModule": ["ts-node/register"],
+    "format": [
+      "progress-bar",
+      "@cucumber/html-formatter:test-results/report.html",
+      "json:test-results/report.json"
+    ],
+    "formatOptions": { "snippetInterface": "async-await" },
+    "timeout": 30000,
+    "publishQuiet": true
+  },
+  "api": {
+    "paths": ["features/api/**/*.feature"],
+    "require": ["src/hooks/hooks.ts", "src/steps/api/**/*.ts"],
+    "requireModule": ["ts-node/register"],
+    "format": ["progress-bar", "json:test-results/api-report.json"],
+    "formatOptions": { "snippetInterface": "async-await" },
+    "timeout": 30000,
+    "publishQuiet": true
+  },
+  "ui": {
+    "paths": ["features/ui/**/*.feature"],
+    "require": ["src/hooks/hooks.ts", "src/steps/ui/**/*.ts"],
+    "requireModule": ["ts-node/register"],
+    "format": ["progress-bar", "json:test-results/ui-report.json"],
+    "formatOptions": { "snippetInterface": "async-await" },
+    "timeout": 30000,
+    "publishQuiet": true
+  }
+}

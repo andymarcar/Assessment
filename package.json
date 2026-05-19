@@ -1,0 +1,24 @@
+{
+  "name": "kata-qa-contactlist",
+  "version": "1.0.0",
+  "description": "QA Automation kata for Contact List app using Playwright + Cucumber + TypeScript",
+  "private": true,
+  "scripts": {
+    "test": "cucumber-js --profile default",
+    "test:api": "cucumber-js --profile api",
+    "test:ui": "cucumber-js --profile ui",
+    "test:report": "cucumber-js --profile default && open test-results/report.html"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "@cucumber/html-formatter": "^21.3.1",
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.14.0",
+    "playwright": "^1.44.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
