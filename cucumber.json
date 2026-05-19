@@ -5,7 +5,7 @@
     "requireModule": ["ts-node/register"],
     "format": [
       "progress-bar",
-      "@cucumber/html-formatter:test-results/report.html",
+      "html:test-results/report.html",
       "json:test-results/report.json"
     ],
     "formatOptions": { "snippetInterface": "async-await" },
